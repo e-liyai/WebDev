@@ -1,26 +1,27 @@
 import java.util.*; 
 
 public class LinkedListHelper {
-    public LinkedList<Char> alphabets = new LinkedList<Char>();
-    public Map<Char, Integer> map=new HashMap<Char, Integer>(); 
+    public LinkedList<String> alphabets = new LinkedList<String>();
+    public Map<String, Integer> map=new HashMap<String, Integer>(); 
 
-    public LinkedList minimizeList(node) {
+    public LinkedList minimizeList(LinkedList node) {
 
-        for (Iterator i = node.iterator(); node.hasNext();) {
-            if(map.containsKey(node.next())) {
-                int value = map.get(node.next());
+        for (int i = 0; i < node.size(); i++) {
+
+            if(map.containsKey(node.get(i))) {
+                int value = map.get(node.get(i));
                 value += 1;
-                map.put(node.next(), value);
+                map.put(node.get(i).toString(), value);
             } else {
-                map.put(node.next(), 1);
+                map.put(node.get(i).toString(), 1);
             }
 
-            if (map.get(node.next()) < 3 ) {
-                alphabet.add(node.next());
+            if (map.get(node.get(i)) < 3 ) {
+                alphabets.add(node.get(i).toString());
             }
         }
 
-        return alphabet;
+        return alphabets;
     }
 }  
 
