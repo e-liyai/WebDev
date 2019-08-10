@@ -9,7 +9,7 @@ CREATE TABLE CarSales (
     CarMaker VARCHAR (50) NOT NULL,
     CarModel VARCHAR (200) NOT NULL,
     TotalSalesPrice NUMERIC (7, 2) NOT NULL,
-    DateCreated TIMESTAMP
+    DateCreated TIMESTAMP DEFAULT NOW()
 );
 
 -- insert values into car sales
