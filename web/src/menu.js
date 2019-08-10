@@ -1,17 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import MenuComponent from './menuComponent/MenuComponent';
 
-class Menu extends React.Component {
-    render() {
-        return (
-          <div>
-            Hello {this.props.name}
-          </div>
-        );
-    }
-}
-
-ReactDOM.render(
-    <Menu name="Eugene" />,
-    document.getElementById('nav-bar')
-);
+const Menu = () => (
+    <div>
+      <MenuComponent />
+    </div>
+  );
+  
+  export default Menu;
