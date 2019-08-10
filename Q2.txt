@@ -1,0 +1,2 @@
+The complexity is O(N). I iterate throught the list once as I build the return checking for duplicates. Space complexity is O(2N)
+since i am building a new list to return, this is a worse case sinerio.
