@@ -8,8 +8,6 @@ public class TestLinkedListHelper extends TestCase {
        alpha = new LinkedList<Double>(Arrays.asList('E', 'B', 'E', 'E', 'B', 'A', 'B'));
    }
    
-
-   // test method to add two values
    public void getLengthithNoDuplicates(){
        LinkedList mini= LllHelper.minimizeList(alpha);
        assertTrue(mini.size == 5);
